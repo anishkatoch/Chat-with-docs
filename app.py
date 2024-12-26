@@ -16,9 +16,7 @@ from dotenv import load_dotenv
 from pptx import Presentation
 # Load environment variables
 load_dotenv()
-
-# Set API key for OpenAI
-openai_api_key = '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'
+openai_api_key = os.getenv("OPENAI_API_KEY")
 
 if not openai_api_key:
     st.error("OpenAI API Key is not set. Please add it to your environment variables.")
