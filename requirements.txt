@@ -12,3 +12,4 @@ faiss-cpu
 python-docx
 openai
 tiktoken
+pptx
